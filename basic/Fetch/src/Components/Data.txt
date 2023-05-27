@@ -1,0 +1,14 @@
+
+
+Hello Mark 
+API IS FETCHING...!
+
+//Async ans Await
+
+async function fun(){ 
+    const res = await fetch("data.txt")
+    console.log(res)
+    const data=await res.text()  
+   
+    console.log(data)  
+}
