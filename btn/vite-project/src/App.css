@@ -1,0 +1,94 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.h{
+  box-shadow: 0 0 5px rgb(244, 53, 85),0 0 25px rgb(252, 24, 62);
+  background-image: linear-gradient(45deg,rgb(58, 33, 56),rgb(54, 35, 64));
+  font-weight: 900;
+ 
+ 
+}
+.h:hover{
+  box-shadow: 0 0 5px rgb(179, 97, 252),0 0 25px rgb(193, 100, 247),
+              0 0 50px rgb(78, 78, 252), 0 0 100px rgb(85, 85, 241);
+}
+
+.container{
+  width: 380px;
+  height: 500px;
+  border: 1px solid blue;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 100px;
+  flex-direction: column;
+}
+
+.display{
+  width: 200px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 16px;
+  margin-top: 50px;
+  color: rgb(62, 246, 62);
+  font-weight: bold;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, rgb(22, 22, 22),black, rgb(21, 21, 21));
+}
+
+
+.btn{
+  width: 100px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+  padding-top: 100px;
+}
