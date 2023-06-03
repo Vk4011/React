@@ -40,3 +40,124 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+.animated-background{
+  background: linear-gradient(to right, #833ab4,
+  #3490fa,#f57953);
+  background-size:  400% 400%;
+  animation: animate-background 10s infinite ease-in-out;
+  height: 600px;
+  width: 350px;
+  border-radius: 25px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  z-index: -1;
+  box-shadow: 0 0  5px rgb(84, 84, 244),0 0  50px rgb(60, 60, 247);
+
+}
+
+
+@keyframes animate-background{
+  0%{
+    background-position: 0 50%;
+    
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+.btn{
+  background-image: linear-gradient(to right ,#6aa1ee68 , #b077f672, #0db7fa73);
+  box-shadow: 0 0 5px rgb(246, 65, 149),0 0 10px rgb(249, 83, 208);
+  font-size: 1rem;
+  color: #f876cf;
+  font-weight: 900;
+  border-radius: 10px;
+}
+
+.btn:hover{
+  box-shadow: 0 0 50px rgb(246, 65, 149),0 0 50px rgb(249, 83, 208),
+  0 0 50px rgb(246, 65, 149),0 0 100px rgb(249, 83, 208);
+}
+
+
+
+.sun{
+  width: 10px;
+  height: 10px;
+  border: 1px solid #02202c;
+  background-image: radial-gradient(rgb(30, 133, 243),rgba(83, 194, 238, 0.268));
+  border-radius:360px ;
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  animation: bounce2 1.5s infinite;
+  box-shadow: 0 0  5px rgb(127, 211, 250),0 0  50px rgb(158, 214, 240);
+  
+  
+}
+.sunt{
+  width: 10px;
+  height: 10px;
+  border: 1px solid #02202c;
+  background-image: radial-gradient(rgba(235, 121, 39, 0.88),rgba(247, 96, 62, 0.37));
+  border-radius:360px ;
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  animation: bounce 1s infinite;
+  z-index: -1;
+  box-shadow: 0 0  5px rgb(252, 114, 55),0 0  50px rgb(248, 116, 83);
+
+}
+
+@keyframes bounce  {
+  0%{
+    top: 100px;
+
+    }
+  50%{
+    top: 700px;
+  }
+  75%{
+    top:100px;
+  }
+
+  100%{
+    top: 250px
+  }
+}
+
+@keyframes bounce2{
+  0%{
+    right: 100px;
+    
+  }
+  25%{
+    top:300px
+  }
+  50%{
+    right:300px
+  }
+100%{
+  top: 100px;
+}
+}
