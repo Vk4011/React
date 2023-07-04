@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import  { useState } from "react";
 import "../Styles/Home.css";
 import axios from "axios";
 import Card from "./Card";
@@ -13,7 +14,7 @@ const Home = () => {
   React.useEffect(() => {
     axios
       .get("https://api.coinstats.app/public/v1/coins?skip=0&limit=25")
-      .then((res) => setData(res.data.coins));
+      .then((res) => setData(res.data.coins));//setData
   }, []);
 
   return (
